@@ -193,7 +193,7 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment {
             p.setExtraWidgetVisibility(EXTRA_WIDGET_VISIBILITY_SETTING);
             p.setExtraWidgetOnClickListener((v) -> GestureNavigationBackSensitivityDialog
                     .show(this, getBackSensitivity(getContext(), mOverlayManager), getBackDeadZoneMode(getContext()),
-                    getShowNav(getContext())));
+                    getShowIMESpace(getContext())));
         } else {
             p.setExtraWidgetVisibility(EXTRA_WIDGET_VISIBILITY_GONE);
         }
@@ -281,24 +281,18 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment {
                 USER_CURRENT);
     }
 
-    static boolean getShowNav(Context context) {
+    static boolean getShowIMESpace(Context context) {
         boolean show = Settings.System.getIntForUser(context.getContentResolver(),
                 Settings.System.GESTURE_NAVBAR_SHOW, 1,
                 USER_CURRENT) != 0;
         return show;
     }
 
-    static void setShowNav(Context context, boolean show) {
+    static void setShowIMESpace(Context context, boolean show) {
         Settings.System.putIntForUser(context.getContentResolver(),
                 Settings.System.GESTURE_NAVBAR_SHOW, show ? 1 : 0,
                 USER_CURRENT);
-        // if gesture nav is already set, force overlay reloading
-        if (getCurrentSystemNavigationMode(context) == KEY_SYSTEM_NAV_GESTURAL) {
-            final IOverlayManager overlayManager = IOverlayManager.Stub.asInterface(
-                    ServiceManager.getService(Context.OVERLAY_SERVICE));
-            int sensitivity = getBackSensitivity(context, overlayManager);
-            setNavBarInteractionMode(overlayManager, BACK_GESTURE_INSET_OVERLAYS[sensitivity], true);
-        }
+        updateNavigationBarOverlays(context);
     }
 
     @VisibleForTesting
@@ -392,6 +386,16 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment {
     private boolean isNavBarMagnificationEnabled() {
         return Settings.Secure.getInt(getContext().getContentResolver(),
                 Settings.Secure.ACCESSIBILITY_DISPLAY_MAGNIFICATION_NAVBAR_ENABLED, 0) == 1;
+    }
+
+    public static void updateNavigationBarOverlays(Context context) {
+        // if gesture nav is already set, force overlay reloading
+        if (getCurrentSystemNavigationMode(context) == KEY_SYSTEM_NAV_GESTURAL) {
+            final IOverlayManager overlayManager = IOverlayManager.Stub.asInterface(
+                    ServiceManager.getService(context.OVERLAY_SERVICE));
+            int sensitivity = getBackSensitivity(context, overlayManager);
+            setNavBarInteractionMode(overlayManager, BACK_GESTURE_INSET_OVERLAYS[sensitivity], true);
+        }
     }
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

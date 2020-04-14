@@ -150,7 +150,7 @@
         android:textAppearance="@style/TextAppearance.Switch" />
 
     <Switch
-        android:id="@+id/show_gestures_navbar"
+        android:id="@+id/navigation_bar_ime_space"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"

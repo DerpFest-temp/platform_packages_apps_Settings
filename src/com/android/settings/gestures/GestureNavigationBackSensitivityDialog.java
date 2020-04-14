@@ -37,10 +37,10 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
     private static final String TAG = "GestureNavigationBackSensitivityDialog";
     private static final String KEY_BACK_SENSITIVITY = "back_sensitivity";
     private static final String KEY_BACK_DEAD_Y_ZONE = "back_dead_y_zone";
-    private static final String KEY_SHOW_NAV = "show_nav";
+    private static final String KEY_NAVIGATION_IME_SPACE = "navigation_bar_ime_space";
 
     public static void show(SystemNavigationGestureSettings parent, int sensitivity, int backDeadYZoneMode,
-            boolean showNav) {
+            boolean showIMESpace) {
         if (!parent.isAdded()) {
             return;
         }
@@ -50,7 +50,7 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
         final Bundle bundle = new Bundle();
         bundle.putInt(KEY_BACK_SENSITIVITY, sensitivity);
         bundle.putInt(KEY_BACK_DEAD_Y_ZONE, backDeadYZoneMode);
-        bundle.putBoolean(KEY_SHOW_NAV, showNav);
+        bundle.putBoolean(KEY_NAVIGATION_IME_SPACE, showIMESpace);
         dialog.setArguments(bundle);
         dialog.setTargetFragment(parent, 0);
         dialog.show(parent.getFragmentManager(), TAG);
@@ -69,8 +69,8 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
         sensitivitySeekBar.setProgress(getArguments().getInt(KEY_BACK_SENSITIVITY));
         final SeekBar backDeadzoneSeekbar = view.findViewById(R.id.back_deadzone_seekbar);
         backDeadzoneSeekbar.setProgress(getArguments().getInt(KEY_BACK_DEAD_Y_ZONE));
-        final Switch showNavSwitch = view.findViewById(R.id.show_gestures_navbar);
-        showNavSwitch.setChecked(getArguments().getBoolean(KEY_SHOW_NAV));
+        final Switch showIMESpaceSwitch = view.findViewById(R.id.navigation_bar_ime_space);
+        showIMESpaceSwitch.setChecked(getArguments().getBoolean(KEY_NAVIGATION_IME_SPACE));
         return new AlertDialog.Builder(getContext())
                 .setTitle(R.string.back_sensitivity_dialog_title_cust)
                 .setView(view)
@@ -83,10 +83,10 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
                     getArguments().putInt(KEY_BACK_DEAD_Y_ZONE, backDeadYZoneMode);
                     SystemNavigationGestureSettings.setBackDeadYZone(getActivity(),
                             backDeadYZoneMode);
-                    boolean showNav = showNavSwitch.isChecked();
-                    getArguments().putBoolean(KEY_SHOW_NAV, showNav);
-                    SystemNavigationGestureSettings.setShowNav(getActivity(),
-                            showNav);
+                    boolean showIMESpace = showIMESpaceSwitch.isChecked();
+                    getArguments().putBoolean(KEY_NAVIGATION_IME_SPACE, showIMESpace);
+                    SystemNavigationGestureSettings.setShowIMESpace(getActivity(),
+                            showIMESpace);
                 })
                 .create();
     }

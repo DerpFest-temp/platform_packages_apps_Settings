@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2020 DerpFest
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- DerpFest Version -->
+    <string name="derp_version">DerpFest Build</string>
+
+    <!-- DerpFest maintainer -->
+    <string name="maintainer">Entwickler</string>
+
+    <!-- DerpFest Build types -->
+    <string name="build_type">Build-Typ</string>
+    <string name="derp_official">Offiziell</string>
+    <string name="derp_beta">Beta</string>
+    <string name="derp_private">Privat</string>
+    <string name="derp_community">Community</string>
+
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Tippen Sie zum Anzeigen von Informationen</string>
+
+    <!-- Enable/Disable Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sounds</string>
+
+    <!-- DerpQuest -->
+    <string name="derpquest_title">DerpQuest</string>
+    <string name="derpquest_activity_summary">Wir vertrauen auf Kronic...</string>
+
+    <!-- DerpFest Updater -->
+    <string name="update_settings_title">DerpFest Updater</string>
+    <string name="update_settings_summary">Nach der aktuellsten Version suchen</string>
+
+    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
+    <string name="system_dashboard_custom_summary">Sprachen, Updater, Zeit und Backup</string>
+
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize accent color. -->
+    <string name="theme_customization_primary_color_title">Primärfarbe</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize accent color. -->
+    <string name="theme_customization_accent_color_title">Akzentfarbe</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Schriftart für Überschrift und Haupttext</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">Form des Symbols</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the statusbar icon -->
+    <string name="theme_customization_sysui_icon_title">Statusleiste/QS Symbole</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">Gemäß Standard fürs Gerät</string>
+
+    <!-- Doze on charge -->
+    <string name="ambient_display_off_summary">Deaktiviert</string>
+    <string name="ambient_display_on_charge_title">Beim Laden</string>
+    <string name="ambient_display_always_title">Immer</string>
+    <string name="ambient_display_screen_summary">Zeit, Benachrichtigungssymbole und andere Informationen anzeigen</string>
+
+    <!-- Notifications while screen on -->
+    <string name="notification_sound_vib_screen_on_title">Laute Benachrichtigungen</string>
+    <string name="notification_sound_vib_screen_on_summary">Wiedergabe von Ton und Vibration für Benachrichtigungen bei eingeschaltetem Bildschirm</string>
+
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Mobile Daten</string>
+    <string name="data_usage_app_restrict_data_summary">Mobile Datennutzung aktivieren</string>
+    <string name="data_usage_app_restrict_vpn">VPN-Daten</string>
+    <string name="data_usage_app_restrict_vpn_summary">VPN-Datennutzung aktivieren</string>
+    <string name="data_usage_app_restrict_wifi">Wlan-Daten</string>
+    <string name="data_usage_app_restrict_wifi_summary">WLAN-Datennutzung aktivieren</string>
+
+    <!-- Pulse ambient display when new music track is played -->
+    <string name="pulse_on_new_tracks_title">Ambient Music Ticker</string>
+    <string name="pulse_on_new_tracks_summary">Ambient Display anzeigen, wenn ein neuer Songtitel abgespielt wird. Um zum nächsten Titel zu springen, auf die Titelinformationen doppeltippen.</string>
+
+    <!-- Lockscreen or ambient display on wake gestures -->
+    <string name="ambient_wake_gestures_title">Ambient-Weckgesten</string>
+    <string name="ambient_wake_gestures_summary">Ambient Display anstelle des normalem Sperrbildschirms bei Weckgesten anzeigen</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Statistik zurücksetzen</string>
+    <string name="battery_stats_message">Die Historie zum letzten Ladevorgang wird zurückgesetzt</string>
+
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+
+    <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Suchen Sie den Fingerabdrucksensor auf der <xliff:g id="sensor_location">%1$s</xliff:g> Ihres Tablets.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Suchen Sie den Fingerabdrucksensor auf der <xliff:g id="sensor_location">%1$s</xliff:g> Ihres Geräts.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Suchen Sie den Fingerabdrucksensor auf der <xliff:g id="sensor_location">%1$s</xliff:g> des Geräts.</string>
+
+    <!-- Twilight -->
+    <string name="unknown_night_light_time">Unbekannt - zum Aktualisieren drücken</string>
+    <string name="night_display_location_text">Der Zeitplan von Sonnenuntergang bis Sonnenaufgang erfordert aktivierte Standortdienste, um die richtige Zeit für den Standort zu erhalten.</string>
+
+    <!-- Touch sensitivity -->
+    <string name="touch_sensitivity_summary">Verbessert die Berührung bei der Verwendung von Bildschirmschutzfolien</string>
+    <string name="touch_sensitivity_title">Erhöhung der Berührungsempfindlichkeit</string>
+    <string name="keywords_touch_sensitivity">Berührung, Empfindlichkeit, Empfindlichkeit, Bildschirmschutz, Film, Reaktionsfähigkeit, Ansprechbarkeit</string>
+
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Adaptive Wiedergabe</string>
+    <string name="adaptive_playback_disabled_summary">Aus</string>
+    <string name="adaptive_playback_timeout_title">Verwenden Sie ein Timeout von</string>
+    <string name="adaptive_playback_timeout_none">Kein Timeout</string>
+    <string name="adaptive_playback_timeout_none_summary">Ein (kein Timeout)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 Sekunden</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Ein (30 Sekunden)</string>
+    <string name="adaptive_playback_timeout_1_min">1 Minute</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Ein (1 Minute)</string>
+    <string name="adaptive_playback_timeout_2_min">2 Minuten</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Ein (2 Minuten)</string>
+    <string name="adaptive_playback_timeout_5_min">5 Minuten</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Ein (5 Minuten)</string>
+    <string name="adaptive_playback_timeout_10_min">10 Minuten</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Ein (10 Minuten)</string>
+
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">Rückseite</string>
+    <string name="security_settings_fingerprint_sensor_location_front">Front</string>
+    <string name="security_settings_fingerprint_sensor_location_left">linken Seite</string>
+    <string name="security_settings_fingerprint_sensor_location_right">rechten Seite</string>
+
+    <!-- SELinux Status -->
+    <string name="selinux_status">SELinux-Status</string>
+    <string name="selinux_status_disabled">Deaktiviert</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
+    <!-- Adb over Network -->
+    <string name="adb_over_network">ADB über Netzwerk</string>
+    <string name="adb_over_network_summary">TCP/IP-Debugging über Netzwerkschnittstellen (WLAN, USB-Netzwerke) aktivieren. Diese Einstellung wird beim Neustart zurückgesetzt</string>
+    <string name="adb_over_network_warning">WARNUNG: Wenn ADB übers Netzwerk aktiviert ist, kann auf Ihr Gerät von jedem verbundenen Netzwerk zugegriffen werden!\n\nDiese Funktion sollte nur verwendet werden, wenn Sie sich in einem vertrauenswürdigen Netzwerk befinden.\n\nMöchten Sie diese Funktion trotzdem aktivieren?</string>
+    <string name="adb_over_network_warning_title">ADB über Netzwerk erlauben?</string>
+
+    <!-- Density category -->
+    <string name="density_category">Displayauflösung</string>
+
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Batterietemperatur</string>
+    <string name="battery_temp_summary">Zum Wechseln der Skala tippen</string>
+
+    <!-- Torch Power button gestures -->
+    <string name="double_tap_power_flashlight_screen_title">Taschenlampe aktivieren</string>
+    <string name="double_tap_power_flashlight_title">Taschenlampe über Ein-/Aus-Taste bei ausgeschaltetem Display</string>
+    <string name="torch_power_button_gesture_none">Deaktiviert</string>
+    <string name="torch_power_button_gesture_dt">Ein-/Aus-Taste doppelt drücken um Taschenlampe einzuschalten</string>
+    <string name="torch_power_button_gesture_lp">Ein-/Aus-Taste lange drücken um Taschenlampe einzuschalten</string>
+
+    <!-- Volume rocker gestures -->
+    <string name="volume_skiptrack_screen_title">Überspringen von Songtiteln</string>
+    <string name="volume_skiptrack_title">Lautstärkeregler zum Überspringen von Titel</string>
+    <string name="volume_skiptrack_summary">Lange auf die Lautstärkewippe drücken, um zum nächsten Songtitel zu springen. Das geht auch ferngesteuert über Fernseher oder PC mit z.B. mit Spotify (App muss auf dem Telefon ausgeführt werden und die Benachrichtigung anzeigen).</string>
+
+    <!-- Swipe fp to dismiss notifications -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Nach links oder rechts über den Fingerabdrucksensor wischen, um Benachrichtigungen zu schließen</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Um Benachrichtigungen zu schließen, nach links oder rechts über den Fingerabdrucksensor auf der Rückseite deines Geräts streichen.</string>
+
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Klingelton- und Benachrichtigungslautstärke verknüpfen</string>
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Wischen um Bildschirmfoto zu erstellen</string>
+    <string name="swipe_to_screenshot_gesture_summary">Wische mit 3 Fingern über den Bildschirm nach unten, um ein Bildschirmfoto aufzunehmen</string>
+
+    <!-- DT2S on statusbar -->
+    <string name="double_tap_to_sleep_title">Statusleiste doppeltippen für Ruhemodus</string>
+    <string name="double_tap_to_sleep_summary">Die Statusleiste doppelt antippen, um das Gerät in den Ruhemodus zu versetzen</string>
+
+    <!-- Long swipe gestures -->
+    <string name="navbar_gesture_tweaks_pref_title">Erweiterte Gesten</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Gesten anpassen und benutzerdefinierte Aktionen festlegen</string>
+    <string name="navbar_gesture_tweaks_cat_title">Erweitert</string>
+    <string name="long_back_swipe_timeout_title">Timeout für lange Wischgeste</string>
+    <string name="left_swipe_actions_title">Lange Wischgeste von links</string>
+    <string name="left_swipe_app_action_title">App wählen für lange Wischgeste von links</string>
+    <string name="right_swipe_actions_title">Lange Wischgeste von rechts</string>
+    <string name="right_swipe_app_action_title">App wählen für lange Wischgeste von rechts</string>
+    <string name="left_vertical_swipe_actions_title">Vertikale Wischaktion nach links</string>
+    <string name="left_vertical_swipe_app_action_title">Wählen Sie die vertikale Linkswisch-App</string>
+    <string name="right_vertical_swipe_actions_title">Vertikale Wischaktion nach rechts</string>
+    <string name="right_vertical_swipe_app_action_title">Wählen Sie die vertikale Rechtswisch-App</string>
+    <string name="gesture_nav_tweaks_footer_info">Um eine bestimmte App-Aktivität für die Aktion auszuwählen, drücke lange auf eine App in der Apps-Auswahl.\n\nWenn der Launcher angezeigt wird, wische ganz unten auf dem Bildschirmrand, um die Aktion auszulösen.</string>
+    <string name="back_swipe_extended_title">Erweiterte Wischgeste</string>
+    <string name="back_swipe_extended_summary">Auslösen einer Aktion bei einem breiteren Wischen (mehr als die Hälfte der Anzeigegröße) oder einem L-Wischen (vertikal länger genug)</string>
+
+    <!-- Themes -->
+    <string name="theme_category">Designs</string>
+    <string name="theme_select_title">Themen</string>
+    <string name="theme_select_summary">Installierte Themen durchstöbern und auswählen</string>
+
+    <!-- Device Parts -->
+    <string name="device_part_title">Gerätefunktionen</string>
+    <string name="device_part_summary">Gerätespezifische Funktionen</string>
+
+    <!-- Notification log --> 
+    <string name="notification_log_summary">Benachrichtigungsprotokoll anzeigen</string>
+
+    <!-- Hardware info -->
+    <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Plattform</string>
+    <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Gesamter Arbeitsspeicher</string>
+
+    <!-- Changelog -->
+    <string name="changelog_title">Änderungshistorie</string>
+    <string name="changelog_summary">Seit dem letzten Update</string>
+    <string name="changelog_error">Changelog kann nicht geladen werden</string>
+
+    <!-- Doze on double tap -->
+    <string name="double_tap_title">Doppeltes Tippen</string>
+    <string name="doze_double_tap_title">Doppelt tippen, um einen schnellen Blick auf das Smartphone-Display zu werfen</string>
+    <string name="doze_double_tap_summary">Benachrichtigungen durch zweimaliges Tippen anzeigen</string>
+
+    <!-- Gesture nav gear options -->
+    <!-- [CHAR LIMIT=60] -->
+    <string name="back_sensitivity_dialog_title_cust">Gesten konfigurieren</string>
+    <string name="back_gesture_sensitivity_dialog_message">Eine höhere Empfindlichkeit kann zu Konflikten mit App-Gesten an den Rändern des Bildschirms führen.</string>
+    <string name="back_gesture_area_dead_zone_title">DeadZone der Zurück-Geste</string>
+    <string name="back_gesture_area_dead_zone_message">Lege den Bereich des Bildschirms fest, in dem das Wischen ausgelöst werden kann. Hierdurch lassen sich Konflikte mit In-App-Gesten vermeiden.</string>
+    <string name="smallest_tick_label">Ganzer Bildschirm</string>
+    <string name="greatest_tick_label">Halber Bildschirm</string>
+    <string name="show_gestures_navbar_title_text">Gestenleiste</string>
+    <string name="show_gestures_navbar_switch_text">Gestenleiste am unteren Bildschirmrand anzeigen</string>
+
+    <!-- Hotspot extras -->
+    <string name="tethering_allow_vpn_upstreams_title">Allow clients to use VPNs</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Permit hotspot clients to use this device\u2019s VPN connections for upstream connectivity</string>
+
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Zum Entsperren nach oben wischen</string>
+    <string name="security_settings_face_require_swipe_summary">Wischen Sie auf dem Sperrbildschirm nach oben, um die Gesichtsentsperrung zu verwenden</string>
+
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Unbeabsichtigtes Aufwecken verhindern</string>
+    <string name="proximity_wake_summary">Vor dem Einschalten des Bildschirms den Näherungssensor überprüfen</string>
+
+    <!-- AOD on charge -->
+    <string name="doze_on_charge_title">Always On beim Laden</string>
+    <string name="doze_on_charge_summary">Always On Ambient-Anzeige anzeigen beim Laden</string>
+
+</resources>
